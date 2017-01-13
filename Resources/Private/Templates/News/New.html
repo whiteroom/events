@@ -1,0 +1,131 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+<f:layout name="Default"/>
+
+
+<f:section name="main">
+    <h1>New News</h1>
+
+    <f:flashMessages/>
+
+    <f:render partial="FormErrors" arguments="{object:News}"/>
+
+    <f:form action="create" name="event" object="{event}"  enctype="multipart/form-data">
+
+        <fieldset>
+            <legend>Art und Titel der Veranstaltung</legend>
+            <div class="row">
+                <div class="col-md-6">
+                    <f:render partial="Fields/Input" arguments="{property:'eventTitle',required:1}"/>
+                </div>
+                <div class="col-md-6">
+                    <f:render partial="Fields/Input" arguments="{property:'eventType',required:1}"/>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <f:render partial="Fields/Input" arguments="{property:'eventSpeaker'}"/>
+                </div>
+                <div class="col-md-6">
+                    <f:render partial="Fields/Input" arguments="{property:'eventLanguage'}"/>
+                </div>
+            </div>
+
+        </fieldset>
+        <fieldset>
+            <legend>Media</legend>
+            <div class="row">
+                <div class="col-md-12">
+                    <f:render partial="Fields/Upload" arguments="{property:'media'}"/>
+                </div>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Datum der Veranstaltung</legend>
+            <div class="row">
+                <div class="col-md-6">
+                    <f:render partial="Fields/Input" arguments="{property:'eventDate',required:1}"/>
+                </div>
+                <div class="col-md-6">
+                    <f:render partial="Fields/Input" arguments="{property:'eventTime'}"/>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <f:render partial="Fields/Input" arguments="{property:'eventOpeningHours'}"/>
+                </div>
+                <div class="col-md-6">
+                    <f:render partial="Fields/Input" arguments="{property:'eventEnd'}"/>
+                </div>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Kosten der Veranstaltung</legend>
+            <div class="row">
+                <div class="col-md-3">
+                    <f:render partial="Fields/Check" arguments="{property:'feeFree'}"/>
+                </div>
+                <div class="col-md-6">
+                    <f:render partial="Fields/Input" arguments="{property:'fee'}"/>
+                </div>
+                <div class="col-md-3">
+                    <f:render partial="Fields/Input" arguments="{property:'eventCurrency'}"/>
+                </div>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Ort der Veranstaltung</legend>
+            <div class="row">
+                <div class="col-md-12">
+                    <f:render partial="Fields/Input" arguments="{property:'location'}"/>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <f:render partial="Fields/Input" arguments="{property:'locationStreet',required:1}"/>
+                </div>
+                <div class="col-md-3">
+                    <f:render partial="Fields/Input" arguments="{property:'locationCity',required:1}"/>
+                </div>
+                <div class="col-md-3">
+                    <f:render partial="Fields/Input" arguments="{property:'locationCountry',required:1}"/>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <f:render partial="Fields/Check" arguments="{property:'locationWheelchairAccessible'}"/>
+                </div>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Informationen zum Veranstalter</legend>
+            <div class="row">
+                <div class="col-md-6">
+                    <f:render partial="Fields/Input" arguments="{property:'organizer',required:1}"/>
+                </div>
+                <div class="col-md-3">
+                    <f:render partial="Fields/Input" arguments="{property:'organizerWww'}"/>
+                </div>
+                <div class="col-md-3">
+                    <f:render partial="Fields/Input" arguments="{property:'organizerEmail',type:'email'}"/>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <f:render partial="Fields/Input" arguments="{property:'registrationUntil'}"/>
+                </div>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Mitteilungen, die nicht veröffentlicht werden</legend>
+            <div class="col-md-12">
+                <f:render partial="Fields/Text" arguments="{property:'notes'}"/>
+            </div>
+        </fieldset>
+
+        <f:form.submit value="Create new"/>
+    </f:form>
+</f:section>
+</html>

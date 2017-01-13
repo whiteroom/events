@@ -1,0 +1,6 @@
+<div class="form-group">
+	<label for="field-{property}">
+		<f:translate key="field.{property}" default="{property}" />
+		{f:if(condition:required,then:'<span>*</span>')} </label>
+	<f:form.textarea property="{property}" class="form-control" id="field-{property}" />
+</div>

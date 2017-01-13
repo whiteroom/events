@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2016-12-28T08:44:39Z" product-name="news_event_registration">
+		<header/>
+		<body>
+			<trans-unit id="tx_newseventregistration_domain_model_news">
+				<source>News</source>
+			</trans-unit>
+			<trans-unit id="tx_news_domain_model_news.tx_extbase_type.Tx_NewsEventRegistration_News">
+				<source>News Event Registration News</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

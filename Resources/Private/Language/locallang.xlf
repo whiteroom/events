@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2016-12-28T08:44:39Z" product-name="news_event_registration">
+		<header/>
+		<body>
+			<trans-unit id="tx_newseventregistration_domain_model_news">
+				<source>News</source>
+			</trans-unit>
+			<trans-unit id="field.media">
+				<source>Media</source>
+			</trans-unit>
+			<trans-unit id="field.eventTitle">
+				<source>Event Title</source>
+			</trans-unit>
+			<trans-unit id="field.eventType">
+				<source>Event Type</source>
+			</trans-unit>
+			<trans-unit id="field.eventSpeaker">
+				<source>Event Speaker</source>
+			</trans-unit>
+			<trans-unit id="field.eventLanguage">
+				<source>Event Language</source>
+			</trans-unit>
+			<trans-unit id="field.eventDate">
+				<source>Event Date</source>
+			</trans-unit>
+			<trans-unit id="field.eventTime">
+				<source>Event Time</source>
+			</trans-unit>
+			<trans-unit id="field.eventOpeningHours">
+				<source>Event Opening Hours</source>
+			</trans-unit>
+			<trans-unit id="field.eventEnd">
+				<source>Event End</source>
+			</trans-unit>
+			<trans-unit id="field.feeFree">
+				<source>Fee Free</source>
+			</trans-unit>
+			<trans-unit id="field.fee">
+				<source>Fee</source>
+			</trans-unit>
+			<trans-unit id="field.eventCurrency">
+				<source>Event Currency</source>
+			</trans-unit>
+			<trans-unit id="field.location">
+				<source>Location</source>
+			</trans-unit>
+			<trans-unit id="field.locationStreet">
+				<source>Location Street</source>
+			</trans-unit>
+			<trans-unit id="field.locationCity">
+				<source>Location City</source>
+			</trans-unit>
+			<trans-unit id="field.locationCountry">
+				<source>Location Country</source>
+			</trans-unit>
+			<trans-unit id="field.locationWheelchairAccessible">
+				<source>Location Wheelchair Accessible</source>
+			</trans-unit>
+			<trans-unit id="field.organizer">
+				<source>Organizer</source>
+			</trans-unit>
+			<trans-unit id="field.organizerWww">
+				<source>Organizer Www</source>
+			</trans-unit>
+			<trans-unit id="field.organizerEmail">
+				<source>Organizer Email</source>
+			</trans-unit>
+			<trans-unit id="field.registrationUntil">
+				<source>Registration Until</source>
+			</trans-unit>
+			<trans-unit id="field.notes">
+				<source>Notes</source>
+			</trans-unit>
+			<trans-unit id="field.subheader">
+				<source>Subheader</source>
+			</trans-unit>
+			<trans-unit id="field.frontendUser">
+				<source>Frontend User</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>
