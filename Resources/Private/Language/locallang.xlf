@@ -4,7 +4,10 @@
 		<header/>
 		<body>
 			<trans-unit id="tx_newseventregistration_domain_model_news">
-				<source>News</source>
+				<source>Events</source>
+			</trans-unit>
+			<trans-unit id="createNew">
+				<source>Create New</source>
 			</trans-unit>
 			<trans-unit id="field.media">
 				<source>Media</source>
@@ -61,7 +64,7 @@
 				<source>Organizer</source>
 			</trans-unit>
 			<trans-unit id="field.organizerWww">
-				<source>Organizer Www</source>
+				<source>Organizer WWW</source>
 			</trans-unit>
 			<trans-unit id="field.organizerEmail">
 				<source>Organizer Email</source>

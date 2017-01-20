@@ -4,10 +4,10 @@
 		<header/>
 		<body>
 			<trans-unit id="tx_newseventregistration_domain_model_news">
-				<source>News</source>
+				<source>Events</source>
 			</trans-unit>
 			<trans-unit id="tx_news_domain_model_news.tx_extbase_type.Tx_NewsEventRegistration_News">
-				<source>News Event Registration News</source>
+				<source>New Event Registration</source>
 			</trans-unit>
 		</body>
 	</file>

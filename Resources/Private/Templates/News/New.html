@@ -3,7 +3,7 @@
 
 
 <f:section name="main">
-    <h1>New News</h1>
+    <h1>Neue Veranstaltung</h1>
 
     <f:flashMessages/>
 
@@ -18,7 +18,7 @@
                     <f:render partial="Fields/Input" arguments="{property:'eventTitle',required:1}"/>
                 </div>
                 <div class="col-md-6">
-                    <f:render partial="Fields/Input" arguments="{property:'eventType',required:1}"/>
+                    <f:render partial="Fields/Input" arguments="{property:'eventType'}"/>
                 </div>
             </div>
             <div class="row">
@@ -83,13 +83,13 @@
             </div>
             <div class="row">
                 <div class="col-md-6">
-                    <f:render partial="Fields/Input" arguments="{property:'locationStreet',required:1}"/>
+                    <f:render partial="Fields/Input" arguments="{property:'locationStreet'}"/>
                 </div>
                 <div class="col-md-3">
-                    <f:render partial="Fields/Input" arguments="{property:'locationCity',required:1}"/>
+                    <f:render partial="Fields/Input" arguments="{property:'locationCity'}"/>
                 </div>
                 <div class="col-md-3">
-                    <f:render partial="Fields/Input" arguments="{property:'locationCountry',required:1}"/>
+                    <f:render partial="Fields/Input" arguments="{property:'locationCountry'}"/>
                 </div>
             </div>
             <div class="row">
@@ -102,7 +102,7 @@
             <legend>Informationen zum Veranstalter</legend>
             <div class="row">
                 <div class="col-md-6">
-                    <f:render partial="Fields/Input" arguments="{property:'organizer',required:1}"/>
+                    <f:render partial="Fields/Input" arguments="{property:'organizer'}"/>
                 </div>
                 <div class="col-md-3">
                     <f:render partial="Fields/Input" arguments="{property:'organizerWww'}"/>
@@ -125,7 +125,7 @@
             </div>
         </fieldset>
 
-        <f:form.submit value="Create new"/>
+        <f:form.submit value="{f:translate(key: 'createNew', default: 'Create New')}" />
     </f:form>
 </f:section>
 </html>

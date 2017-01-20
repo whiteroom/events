@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<xliff version="1.0">
+  <file source-language="en" datatype="plaintext" original="messages" date="2016-12-28T08:44:39Z" product-name="news_event_registration" target-language="de">
+    <header/>
+    <body>
+      <trans-unit id="tx_newseventregistration_domain_model_news">
+        <source>Events</source>
+        <target>Veranstaltungen</target>
+      </trans-unit>
+      <trans-unit id="createNew">
+        <source>Create New</source>
+        <target>Abschicken</target>
+      </trans-unit>
+      <trans-unit id="field.media">
+        <source>Media</source>
+        <target>Eine Bilddatei</target>
+      </trans-unit>
+      <trans-unit id="field.eventTitle">
+        <source>Event Title</source>
+        <target>Titel der Veranstaltung</target>
+      </trans-unit>
+      <trans-unit id="field.eventType">
+        <source>Event Type</source>
+        <target>Art der Veranstaltung</target>
+      </trans-unit>
+      <trans-unit id="field.eventSpeaker">
+        <source>Event Speaker</source>
+        <target>Referenten, Gäste, Sprecher</target>
+      </trans-unit>
+      <trans-unit id="field.eventLanguage">
+        <source>Event Language</source>
+        <target>Sprache</target>
+      </trans-unit>
+      <trans-unit id="field.eventDate">
+        <source>Event Date</source>
+        <target>Beginn der Veranstaltung (Datum)</target>
+      </trans-unit>
+      <trans-unit id="field.eventTime">
+        <source>Event Time</source>
+        <target>Zeit (Uhrzeit)</target>
+      </trans-unit>
+      <trans-unit id="field.eventOpeningHours">
+        <source>Event Opening Hours</source>
+        <target>Öffnungszeiten</target>
+      </trans-unit>
+      <trans-unit id="field.eventEnd">
+        <source>Event End</source>
+        <target>Veranstaltungsende</target>
+      </trans-unit>
+      <trans-unit id="field.feeFree">
+        <source>Fee Free</source>
+        <target>Eintritt frei</target>
+      </trans-unit>
+      <trans-unit id="field.fee">
+        <source>Fee</source>
+        <target>Eintritt</target>
+      </trans-unit>
+      <trans-unit id="field.eventCurrency">
+        <source>Event Currency</source>
+        <target>Währung</target>
+      </trans-unit>
+      <trans-unit id="field.location">
+        <source>Location</source>
+        <target>Veranstaltungsort</target>
+      </trans-unit>
+      <trans-unit id="field.locationStreet">
+        <source>Location Street</source>
+        <target>Adresse, Strasse</target>
+      </trans-unit>
+      <trans-unit id="field.locationCity">
+        <source>Location City</source>
+        <target>Stadt</target>
+      </trans-unit>
+      <trans-unit id="field.locationCountry">
+        <source>Location Country</source>
+        <target>Land</target>
+      </trans-unit>
+      <trans-unit id="field.locationWheelchairAccessible">
+        <source>Location Wheelchair Accessible</source>
+        <target>Zugang ist rollstuhlgängig</target>
+      </trans-unit>
+      <trans-unit id="field.organizer">
+        <source>Organizer</source>
+        <target>Veranstalter</target>
+      </trans-unit>
+      <trans-unit id="field.organizerWww">
+        <source>Organizer WWW</source>
+        <target>Veranstalter WWW</target>
+      </trans-unit>
+      <trans-unit id="field.organizerEmail">
+        <source>Organizer Email</source>
+        <target>Veranstalter Email</target>
+      </trans-unit>
+      <trans-unit id="field.registrationUntil">
+        <source>Registration Until</source>
+        <target>Anmeldung bis</target>
+      </trans-unit>
+      <trans-unit id="field.notes">
+        <source>Notes</source>
+        <target>Bemerkungen</target>
+      </trans-unit>
+      <trans-unit id="field.subheader">
+        <source>Subheader</source>
+        <target>Untertitel</target>
+      </trans-unit>
+      <trans-unit id="field.frontendUser">
+        <source>Frontend User</source>
+        <target>Frontend Benutzer</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>
