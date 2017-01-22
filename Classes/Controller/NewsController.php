@@ -177,6 +177,7 @@ class NewsController extends ActionController
                 if ($file) {
                     $media = $this->objectManager->get(FileReference::class);
                     $media->setFileUid($file->getUid());
+                    $media->setShowinpreview(true);
                     $news->addFalMedia($media);
                     $mediaAdded = true;
                 }
