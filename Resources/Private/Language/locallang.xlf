@@ -19,7 +19,7 @@
 				<source>Event Type</source>
 			</trans-unit>
 			<trans-unit id="field.eventSpeaker">
-				<source>Event Speaker</source>
+				<source>Event Speakers, Guests</source>
 			</trans-unit>
 			<trans-unit id="field.eventLanguage">
 				<source>Event Language</source>

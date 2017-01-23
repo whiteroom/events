@@ -24,8 +24,8 @@
         <target>Art der Veranstaltung</target>
       </trans-unit>
       <trans-unit id="field.eventSpeaker">
-        <source>Event Speaker</source>
-        <target>Referenten, Gäste, Sprecher</target>
+        <source>Event Speakers, Guests</source>
+        <target>Weitere Angaben (Referenten, Gäste, etc.)</target>
       </trans-unit>
       <trans-unit id="field.eventLanguage">
         <source>Event Language</source>
@@ -45,7 +45,7 @@
       </trans-unit>
       <trans-unit id="field.eventEnd">
         <source>Event End</source>
-        <target>Veranstaltungsende</target>
+        <target>Veranstaltungsende (Datum)</target>
       </trans-unit>
       <trans-unit id="field.feeFree">
         <source>Fee Free</source>
