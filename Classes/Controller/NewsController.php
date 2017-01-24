@@ -24,6 +24,7 @@ use TYPO3\CMS\Extbase\Mvc\Controller\ActionController;
 use TYPO3\CMS\Extbase\Persistence\Generic\PersistenceManager;
 use TYPO3\CMS\Extbase\Utility\LocalizationUtility;
 use TYPO3\CMS\Frontend\Authentication\FrontendUserAuthentication;
+use TYPO3\CMS\Frontend\Controller\TypoScriptFrontendController;
 
 /**
  * NewsController
@@ -89,7 +90,11 @@ class NewsController extends ActionController
         $settings = $this->settings['mailToUser'];
         $emailAddress = $frontendUser['email'];
         if ($settings['enable'] == 1 && GeneralUtility::validEmail($emailAddress)) {
-            $plainContent = $this->mailService->getFluidTemplate(['news' => $news], 'MailToUser.txt');
+            $arguments = [
+                'language' => $this->getTsfe()->sys_language_uid,
+                'news' => $news
+            ];
+            $plainContent = $this->mailService->getFluidTemplate($arguments, 'MailToUser.txt');
             $mailMessage = GeneralUtility::makeInstance(MailMessage::class);
             $mailMessage
                 ->setSubject($this->translate($settings['subject']))
@@ -104,7 +109,11 @@ class NewsController extends ActionController
         $settings = $this->settings['mailToAdmin'];
         $emailAddress = $settings['to'];
         if ($settings['enable'] == 1 && GeneralUtility::validEmail($emailAddress)) {
-            $plainContent = $this->mailService->getFluidTemplate(['news' => $news], 'MailToAdmin.txt');
+            $arguments = [
+                'language' => $this->getTsfe()->sys_language_uid,
+                'news' => $news
+            ];
+            $plainContent = $this->mailService->getFluidTemplate($arguments, 'MailToAdmin.txt');
             $mailMessage = GeneralUtility::makeInstance(MailMessage::class);
             $mailMessage
                 ->setSubject($this->translate($settings['subject']))
@@ -235,6 +244,13 @@ class NewsController extends ActionController
     public function injectNewsRepository(\GeorgRinger\News\Domain\Repository\NewsRepository $newsRepository)
     {
         $this->newsRepository = $newsRepository;
+    }
+
+    /**
+     * @return TypoScriptFrontendController
+     */
+    protected function getTsfe() {
+        return $GLOBALS['TSFE'];
     }
 
 }
