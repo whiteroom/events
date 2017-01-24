@@ -9,77 +9,80 @@
 			<trans-unit id="createNew">
 				<source>Create New</source>
 			</trans-unit>
-			<trans-unit id="field.media">
+			<trans-unit id="event.media">
 				<source>Media</source>
 			</trans-unit>
-			<trans-unit id="field.eventTitle">
+			<trans-unit id="event.eventTitle">
 				<source>Event Title</source>
 			</trans-unit>
-			<trans-unit id="field.eventType">
+			<trans-unit id="event.eventType">
 				<source>Event Type</source>
 			</trans-unit>
-			<trans-unit id="field.eventSpeaker">
+			<trans-unit id="event.eventSpeaker">
 				<source>Event Speakers, Guests</source>
 			</trans-unit>
-			<trans-unit id="field.eventLanguage">
+			<trans-unit id="event.eventLanguage">
 				<source>Event Language</source>
 			</trans-unit>
-			<trans-unit id="field.eventDate">
+			<trans-unit id="event.eventDate">
 				<source>Event Date</source>
 			</trans-unit>
-			<trans-unit id="field.eventTime">
+			<trans-unit id="event.eventTime">
 				<source>Event Time</source>
 			</trans-unit>
-			<trans-unit id="field.eventOpeningHours">
+			<trans-unit id="event.eventOpeningHours">
 				<source>Event Opening Hours</source>
 			</trans-unit>
-			<trans-unit id="field.eventEnd">
+			<trans-unit id="event.eventEnd">
 				<source>Event End</source>
 			</trans-unit>
-			<trans-unit id="field.feeFree">
+			<trans-unit id="event.feeFree">
 				<source>Fee Free</source>
 			</trans-unit>
-			<trans-unit id="field.fee">
+			<trans-unit id="event.fee">
 				<source>Fee</source>
 			</trans-unit>
-			<trans-unit id="field.eventCurrency">
+			<trans-unit id="event.eventCurrency">
 				<source>Event Currency</source>
 			</trans-unit>
-			<trans-unit id="field.location">
+			<trans-unit id="event.location">
 				<source>Location</source>
 			</trans-unit>
-			<trans-unit id="field.locationStreet">
+			<trans-unit id="event.locationStreet">
 				<source>Location Street</source>
 			</trans-unit>
-			<trans-unit id="field.locationCity">
+			<trans-unit id="event.locationCity">
 				<source>Location City</source>
 			</trans-unit>
-			<trans-unit id="field.locationCountry">
+			<trans-unit id="event.locationCountry">
 				<source>Location Country</source>
 			</trans-unit>
-			<trans-unit id="field.locationWheelchairAccessible">
+			<trans-unit id="event.locationWheelchairAccessible">
 				<source>Location Wheelchair Accessible</source>
 			</trans-unit>
-			<trans-unit id="field.organizer">
+			<trans-unit id="event.organizer">
 				<source>Organizer</source>
 			</trans-unit>
-			<trans-unit id="field.organizerWww">
+			<trans-unit id="event.organizerWww">
 				<source>Organizer WWW</source>
 			</trans-unit>
-			<trans-unit id="field.organizerEmail">
+			<trans-unit id="event.organizerEmail">
 				<source>Organizer Email</source>
 			</trans-unit>
-			<trans-unit id="field.registrationUntil">
+			<trans-unit id="event.registrationUntil">
 				<source>Registration Until</source>
 			</trans-unit>
-			<trans-unit id="field.notes">
+			<trans-unit id="event.notes">
 				<source>Notes</source>
 			</trans-unit>
-			<trans-unit id="field.subheader">
+			<trans-unit id="event.subheader">
 				<source>Subheader</source>
 			</trans-unit>
-			<trans-unit id="field.frontendUser">
+			<trans-unit id="event.frontendUser">
 				<source>Frontend User</source>
+			</trans-unit>
+			<trans-unit id="error.1221560718">
+				<source>This field is required!</source>
 			</trans-unit>
 		</body>
 	</file>
