@@ -4,13 +4,13 @@
 			<label for="field-{property}">
 				<f:translate key="event.{property}" default="{property}" />
 				{f:if(condition:required,then:'<span>*</span>')}</label>
-			<f:form.textfield property="{property}" class="form-control date-field" id="field-{property}" additionalAttributes="{additionalAttributes}" />
+			<f:form.textfield property="{property}" class="form-control date-field" required="{required}" id="field-{property}" additionalAttributes="{additionalAttributes}" />
 		</f:then>
 		<f:else>
 			<label for="field-{property}">
 				<f:translate key="event.{property}" default="{property}" />
 				{f:if(condition:required,then:'<span>*</span>')}</label>
-			<f:form.textfield type="{f:if(condition:type,then:type,else:'text')}" property="{property}" class="form-control" id="field-{property}" additionalAttributes="{additionalAttributes}" />
+			<f:form.textfield type="{f:if(condition:type,then:type,else:'text')}" property="{property}" class="form-control" required="{required}" id="field-{property}" additionalAttributes="{additionalAttributes}" />
 		</f:else>
 	</f:if>
 </div>
