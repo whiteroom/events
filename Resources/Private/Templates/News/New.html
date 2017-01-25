@@ -15,15 +15,15 @@
             <legend>Art und Titel der Veranstaltung</legend>
             <div class="row">
                 <div class="col-md-6">
-                    <f:render partial="Fields/Input" arguments="{property:'eventTitle',required:1}"/>
+                    <f:render partial="Fields/Input" arguments="{property:'eventTitle',maxlength:256,required:1}"/>
                 </div>
                 <div class="col-md-6">
-                    <f:render partial="Fields/Input" arguments="{property:'eventType',required:1}"/>
+                    <f:render partial="Fields/Input" arguments="{property:'eventType',maxlength:256,required:1}"/>
                 </div>
             </div>
             <div class="row">
                 <div class="col-md-6">
-                    <f:render partial="Fields/Input" arguments="{property:'eventSpeaker'}"/>
+                    <f:render partial="Fields/Input" arguments="{property:'eventSpeaker',maxlength:256}"/>
                 </div>
                 <div class="col-md-6">
                     <f:render partial="Fields/Input" arguments="{property:'eventLanguage'}"/>
