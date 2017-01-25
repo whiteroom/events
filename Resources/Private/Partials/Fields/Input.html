@@ -10,7 +10,7 @@
 			<label for="field-{property}">
 				<f:translate key="event.{property}" default="{property}" />
 				{f:if(condition:required,then:'<span>*</span>')}</label>
-			<f:form.textfield type="{f:if(condition:type,then:type,else:'text')}" property="{property}" class="form-control" required="{required}" id="field-{property}" additionalAttributes="{additionalAttributes}" />
+			<f:form.textfield type="{f:if(condition:type,then:type,else:'text')}" maxlength="{maxlength}" property="{property}" class="form-control" required="{required}" id="field-{property}" additionalAttributes="{additionalAttributes}" />
 		</f:else>
 	</f:if>
 </div>
