@@ -13,7 +13,7 @@
       </trans-unit>
       <trans-unit id="field.media">
         <source>Media</source>
-        <target>Eine Bilddatei</target>
+        <target>Eine Bilddatei (max. 8MB)</target>
       </trans-unit>
       <trans-unit id="field.eventTitle">
         <source>Event Title</source>
@@ -25,7 +25,7 @@
       </trans-unit>
       <trans-unit id="field.eventSpeaker">
         <source>Event Speakers, Guests</source>
-        <target>Weitere Angaben (Referenten, Gäste, etc.)</target>
+        <target>Weitere Angaben (Referenten, Gäste, etc.) max. 256 Zeichen</target>
       </trans-unit>
       <trans-unit id="field.eventLanguage">
         <source>Event Language</source>
@@ -37,7 +37,7 @@
       </trans-unit>
       <trans-unit id="field.eventTime">
         <source>Event Time</source>
-        <target>Zeit (Uhrzeit)</target>
+        <target>Beginn (Uhrzeit)</target>
       </trans-unit>
       <trans-unit id="field.eventOpeningHours">
         <source>Event Opening Hours</source>

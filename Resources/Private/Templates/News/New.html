@@ -43,7 +43,7 @@
             <legend>Datum der Veranstaltung</legend>
             <div class="row">
                 <div class="col-md-6">
-                    <f:render partial="Fields/Input" arguments="{property:'eventDate',required:1}"/>
+                    <f:render partial="Fields/Input" arguments="{property:'eventDate',required:1,type:'date'}"/>
                 </div>
                 <div class="col-md-6">
                     <f:render partial="Fields/Input" arguments="{property:'eventTime'}"/>
@@ -54,7 +54,7 @@
                     <f:render partial="Fields/Input" arguments="{property:'eventOpeningHours'}"/>
                 </div>
                 <div class="col-md-6">
-                    <f:render partial="Fields/Input" arguments="{property:'eventEnd'}"/>
+                    <f:render partial="Fields/Input" arguments="{property:'eventEnd',type:'date'}"/>
                 </div>
             </div>
         </fieldset>
@@ -113,7 +113,7 @@
             </div>
             <div class="row">
                 <div class="col-md-12">
-                    <f:render partial="Fields/Input" arguments="{property:'registrationUntil'}"/>
+                    <f:render partial="Fields/Input" arguments="{property:'registrationUntil',type:'date'}"/>
                 </div>
             </div>
         </fieldset>
