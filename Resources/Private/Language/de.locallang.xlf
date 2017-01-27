@@ -84,8 +84,8 @@
 		    <target>Veranstalter</target>
 		  </trans-unit>
 		  <trans-unit id="event.organizerWww">
-		    <source>Organizer WWW</source>
-		    <target>Veranstalter WWW</target>
+		    <source>Organizer Website</source>
+		    <target>Veranstalter Webseite</target>
 		  </trans-unit>
 		  <trans-unit id="event.organizerEmail">
 		    <source>Organizer Email</source>
@@ -106,6 +106,14 @@
 		  <trans-unit id="event.frontendUser">
 		    <source>Frontend User</source>
 		    <target>Frontend Benutzer</target>
+		  </trans-unit>
+		  <trans-unit id="event.salutationEmail">
+		  	<source>Thank you for registering an event!</source>
+		    <target>Danke für die Anmeldung einer Veranstaltung!</target>
+		  </trans-unit>
+		  <trans-unit id="event.bodytextEmail">
+		  	<source>Please note, that the publication of your data is preceded by a formal inspection. Publication is therefore not intended to take place immediately. Thank you. This is the data you submitted:</source>
+		    <target>Bitte beachten sie, dass die eingereichten Daten von uns geprüft werden. Die Publikation ihrer Veranstaltung erfolgt deshalb nicht unmittelbar. Herzlichen Dank. Das sind die Angaben die wir erhalten haben:</target>
 		  </trans-unit>
 		  <trans-unit id="error.1221560718">
 		  	<source>This field is required!</source>

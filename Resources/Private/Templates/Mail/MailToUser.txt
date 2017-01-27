@@ -1,47 +1,49 @@
-Thanks for your registration! This is the data you submitted!
+<f:translate key="LLL:EXT:news_event_registration/Resources/Private/Language/locallang.xlf:event.salutationEmail" default="Thank you for registering an event!" />
+<f:translate key="LLL:EXT:news_event_registration/Resources/Private/Language/locallang.xlf:event.bodytextEmail" default="Please note, that the publication of your data is preceded by a formal inspection. This is the data you submitted:" />
+
 
 Art und Titel der Veranstaltung
--------------------------------
+––––––––––––––––––––––––––––––––––––––––––––––
 {f:render(section:'field',arguments:{field:'eventTitle',value:news.eventTitle})}
 {f:render(section:'field',arguments:{field:'eventType',value:news.eventType})}
-{f:render(section:'field',arguments:{field:'eventSpeaker',value:news.eventSpeaker})}
-{f:render(section:'field',arguments:{field:'eventLanguage',value:news.eventLanguage})}
-
-Media
--------------------------------
-TODO
-
+<f:if condition="{news.eventSpeaker}">{f:render(section:'field',arguments:{field:'eventSpeaker',value:news.eventSpeaker})}
+</f:if><f:if condition="{news.eventLanguage}">{f:render(section:'field',arguments:{field:'eventLanguage',value:news.eventLanguage})}
+</f:if>
 Datum der Veranstaltung
--------------------------------
+––––––––––––––––––––––––––––––––––––––––––––––
 {f:render(section:'fieldDate',arguments:{field:'eventDate',value:news.eventDate})}
-{f:render(section:'field',arguments:{field:'eventTime',value:news.eventTime})}
-{f:render(section:'field',arguments:{field:'eventOpeningHours',value:news.eventOpeningHours})}
-
+<f:if condition="{news.eventTime}">{f:render(section:'field',arguments:{field:'eventTime',value:news.eventTime})}
+</f:if><f:if condition="{news.eventOpeningHours}">{f:render(section:'field',arguments:{field:'eventOpeningHours',value:news.eventOpeningHours})}
+</f:if>
 Kosten der Veranstaltung
--------------------------------
-{f:render(section:'fieldBool',arguments:{field:'feeFree',value:news.feeFree})}
-{f:render(section:'field',arguments:{field:'fee',value:news.fee})}
-{f:render(section:'field',arguments:{field:'eventCurrency',value:news.eventCurrency})}
-
+––––––––––––––––––––––––––––––––––––––––––––––
+<f:if condition="{news.feeFree} == 1">{f:render(section:'fieldBool',arguments:{field:'feeFree',value:news.feeFree})}
+</f:if><f:if condition="{news.fee}">{f:render(section:'field',arguments:{field:'fee',value:news.fee})}
+</f:if><f:if condition="{news.eventCurrency}">{f:render(section:'field',arguments:{field:'eventCurrency',value:news.eventCurrency})}
+</f:if>
 Ort der Veranstaltung
--------------------------------
-{f:render(section:'field',arguments:{field:'location',value:news.location})}
-{f:render(section:'field',arguments:{field:'locationStreet',value:news.locationStreet})}
-{f:render(section:'field',arguments:{field:'locationCity',value:news.locationCity})}
-{f:render(section:'field',arguments:{field:'locationCountry',value:news.locationCountry})}
-{f:render(section:'fieldBool',arguments:{field:'locationWheelchairAccessible',value:news.locationWheelchairAccessible})}
+––––––––––––––––––––––––––––––––––––––––––––––
+<f:if condition="{news.location}">{f:render(section:'field',arguments:{field:'location',value:news.location})}
+</f:if><f:if condition="{news.locationStreet}">{f:render(section:'field',arguments:{field:'locationStreet',value:news.locationStreet})}
+</f:if><f:if condition="{news.locationCity}">{f:render(section:'field',arguments:{field:'locationCity',value:news.locationCity})}
+</f:if><f:if condition="{news.locationCountry}">{f:render(section:'field',arguments:{field:'locationCountry',value:news.locationCountry})}
+</f:if>{f:render(section:'fieldBool',arguments:{field:'locationWheelchairAccessible',value:news.locationWheelchairAccessible})}
 
 Informationen zum Veranstalter
--------------------------------
-{f:render(section:'field',arguments:{field:'organizer',value:news.organizer})}
-{f:render(section:'field',arguments:{field:'organizerWww',value:news.organizerWww})}
-{f:render(section:'field',arguments:{field:'organizerEmail',value:news.organizerEmail})}
-{f:render(section:'field',arguments:{field:'registrationUntil',value:news.registrationUntil})}
+––––––––––––––––––––––––––––––––––––––––––––––
+<f:if condition="{news.organizer}">{f:render(section:'field',arguments:{field:'organizer',value:news.organizer})}
+</f:if><f:if condition="{news.organizerWww}">{f:render(section:'field',arguments:{field:'organizerWww',value:news.organizerWww})}
+</f:if><f:if condition="{news.organizerEmail}">{f:render(section:'field',arguments:{field:'organizerEmail',value:news.organizerEmail})}
+</f:if><f:if condition="{news.registrationUntil}">{f:render(section:'field',arguments:{field:'registrationUntil',value:news.registrationUntil})}
+</f:if>
+<f:if condition="{news.falMedia}">Media
+––––––––––––––––––––––––––––––––––––––––––––––
+<f:for each="{news.falMedia}" as="m">{domain}{m.originalResource.publicUrl}</f:for>
 
-Notizen
--------------------------------
-{news.notes}
+</f:if><f:if condition="{news.notes}">Notizen
+––––––––––––––––––––––––––––––––––––––––––––––
+{news.notes}</f:if>
 
-<f:section name="field"><f:translate key="LLL:EXT:news_event_registration/Resources/Private/Language/locallang.xlf:field.{field}" default="{field}" />: {value}</f:section>
-<f:section name="fieldDate"><f:translate key="LLL:EXT:news_event_registration/Resources/Private/Language/locallang.xlf:field.{field}" default="{field}" />: <f:if condition="{value}"><f:then>{value -> f:format.date(format:'d.m.Y')}</f:then><f:else>-</f:else></f:if></f:section>
-<f:section name="fieldBool"><f:translate key="LLL:EXT:news_event_registration/Resources/Private/Language/locallang.xlf:field.{field}" default="{field}" />: {f:if(condition:value,then:'ja',else:'nein')}</f:section>
+<f:section name="field"><f:translate key="LLL:EXT:news_event_registration/Resources/Private/Language/locallang.xlf:event.{field}" default="{field}" />: {value}</f:section>
+<f:section name="fieldDate"><f:translate key="LLL:EXT:news_event_registration/Resources/Private/Language/locallang.xlf:event.{field}" default="{field}" />: <f:if condition="{value}"><f:then>{value -> f:format.date(format:'d.m.Y')}</f:then><f:else>-</f:else></f:if></f:section>
+<f:section name="fieldBool"><f:translate key="LLL:EXT:news_event_registration/Resources/Private/Language/locallang.xlf:event.{field}" default="{field}" />: {f:if(condition:value,then:'ja',else:'nein')}</f:section>

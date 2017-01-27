@@ -1,30 +1,31 @@
-A new registration has been submitted.
+Eine neue Veranstaltung wurde eingereicht.
+
 
 Art und Titel der Veranstaltung
--------------------------------
+––––––––––––––––––––––––––––––––––––––––––––––
 {f:render(section:'field',arguments:{field:'eventTitle',value:news.eventTitle})}
 {f:render(section:'field',arguments:{field:'eventType',value:news.eventType})}
 {f:render(section:'field',arguments:{field:'eventSpeaker',value:news.eventSpeaker})}
 {f:render(section:'field',arguments:{field:'eventLanguage',value:news.eventLanguage})}
 
 Media
--------------------------------
+––––––––––––––––––––––––––––––––––––––––––––––
 <f:if condition="{news.falMedia}"><f:for each="{news.falMedia}" as="m">{domain}{m.originalResource.publicUrl}</f:for></f:if>
 
 Datum der Veranstaltung
--------------------------------
+––––––––––––––––––––––––––––––––––––––––––––––
 {f:render(section:'fieldDate',arguments:{field:'eventDate',value:news.eventDate})}
 {f:render(section:'field',arguments:{field:'eventTime',value:news.eventTime})}
 {f:render(section:'field',arguments:{field:'eventOpeningHours',value:news.eventOpeningHours})}
 
 Kosten der Veranstaltung
--------------------------------
+––––––––––––––––––––––––––––––––––––––––––––––
 {f:render(section:'fieldBool',arguments:{field:'feeFree',value:news.feeFree})}
 {f:render(section:'field',arguments:{field:'fee',value:news.fee})}
 {f:render(section:'field',arguments:{field:'eventCurrency',value:news.eventCurrency})}
 
 Ort der Veranstaltung
--------------------------------
+––––––––––––––––––––––––––––––––––––––––––––––
 {f:render(section:'field',arguments:{field:'location',value:news.location})}
 {f:render(section:'field',arguments:{field:'locationStreet',value:news.locationStreet})}
 {f:render(section:'field',arguments:{field:'locationCity',value:news.locationCity})}
@@ -32,16 +33,16 @@ Ort der Veranstaltung
 {f:render(section:'fieldBool',arguments:{field:'locationWheelchairAccessible',value:news.locationWheelchairAccessible})}
 
 Informationen zum Veranstalter
--------------------------------
+––––––––––––––––––––––––––––––––––––––––––––––
 {f:render(section:'field',arguments:{field:'organizer',value:news.organizer})}
 {f:render(section:'field',arguments:{field:'organizerWww',value:news.organizerWww})}
 {f:render(section:'field',arguments:{field:'organizerEmail',value:news.organizerEmail})}
 {f:render(section:'field',arguments:{field:'registrationUntil',value:news.registrationUntil})}
 
 Notizen
--------------------------------
+––––––––––––––––––––––––––––––––––––––––––––––
 {news.notes}
 
-<f:section name="field"><f:translate key="LLL:EXT:news_event_registration/Resources/Private/Language/locallang.xlf:field.{field}" default="{field}" />: {value}</f:section>
-<f:section name="fieldDate"><f:translate key="LLL:EXT:news_event_registration/Resources/Private/Language/locallang.xlf:field.{field}" default="{field}" />: <f:if condition="{value}"><f:then>{value -> f:format.date(format:'d.m.Y')}</f:then><f:else>-</f:else></f:if></f:section>
-<f:section name="fieldBool"><f:translate key="LLL:EXT:news_event_registration/Resources/Private/Language/locallang.xlf:field.{field}" default="{field}" />: {f:if(condition:value,then:'ja',else:'nein')}</f:section>
+<f:section name="field"><f:translate key="LLL:EXT:news_event_registration/Resources/Private/Language/locallang.xlf:event.{field}" default="{field}" />: {value}</f:section>
+<f:section name="fieldDate"><f:translate key="LLL:EXT:news_event_registration/Resources/Private/Language/locallang.xlf:event.{field}" default="{field}" />: <f:if condition="{value}"><f:then>{value -> f:format.date(format:'d.m.Y')}</f:then><f:else>-</f:else></f:if></f:section>
+<f:section name="fieldBool"><f:translate key="LLL:EXT:news_event_registration/Resources/Private/Language/locallang.xlf:event.{field}" default="{field}" />: {f:if(condition:value,then:'ja',else:'nein')}</f:section>

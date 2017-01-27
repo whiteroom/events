@@ -64,7 +64,7 @@
 				<source>Organizer</source>
 			</trans-unit>
 			<trans-unit id="event.organizerWww">
-				<source>Organizer WWW</source>
+				<source>Organizer Website</source>
 			</trans-unit>
 			<trans-unit id="event.organizerEmail">
 				<source>Organizer Email</source>
@@ -80,6 +80,12 @@
 			</trans-unit>
 			<trans-unit id="event.frontendUser">
 				<source>Frontend User</source>
+			</trans-unit>
+			<trans-unit id="event.salutationEmail">
+				<source>Thank you for registering an event! This is the data you submitted:</source>
+			</trans-unit>
+			<trans-unit id="event.bodytextEmail">
+				<source>Please note, that the publication of your data is preceded by a formal inspection. Publication is therefore not intended to take place immediately. Thank you. This is the data you submitted:</source>
 			</trans-unit>
 			<trans-unit id="error.1221560718">
 				<source>This field is required!</source>
