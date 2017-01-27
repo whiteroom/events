@@ -1,112 +1,116 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <xliff version="1.0">
   <file source-language="en" datatype="plaintext" original="messages" date="2016-12-28T08:44:39Z" product-name="news_event_registration" target-language="de">
-    <header/>
-    <body>
-      <trans-unit id="tx_newseventregistration_domain_model_news">
-        <source>Events</source>
-        <target>Veranstaltungen</target>
-      </trans-unit>
-      <trans-unit id="createNew">
-        <source>Create New</source>
-        <target>Abschicken</target>
-      </trans-unit>
-      <trans-unit id="event.media">
-        <source>Media</source>
-        <target>Eine Bilddatei (max. 8MB)</target>
-      </trans-unit>
-      <trans-unit id="event.eventTitle">
-        <source>Event Title</source>
-        <target>Titel der Veranstaltung</target>
-      </trans-unit>
-      <trans-unit id="event.eventType">
-        <source>Event Type</source>
-        <target>Art der Veranstaltung</target>
-      </trans-unit>
-      <trans-unit id="event.eventSpeaker">
-        <source>Event Speakers, Guests</source>
-        <target>Weitere Angaben (Referenten, Gäste, etc.) max. 256 Zeichen</target>
-      </trans-unit>
-      <trans-unit id="event.eventLanguage">
-        <source>Event Language</source>
-        <target>Sprache</target>
-      </trans-unit>
-      <trans-unit id="event.eventDate">
-        <source>Event Date</source>
-        <target>Beginn der Veranstaltung (Datum)</target>
-      </trans-unit>
-      <trans-unit id="event.eventTime">
-        <source>Event Time</source>
-        <target>Beginn (Uhrzeit)</target>
-      </trans-unit>
-      <trans-unit id="event.eventOpeningHours">
-        <source>Event Opening Hours</source>
-        <target>Öffnungszeiten</target>
-      </trans-unit>
-      <trans-unit id="event.eventEnd">
-        <source>Event End</source>
-        <target>Veranstaltungsende (Datum)</target>
-      </trans-unit>
-      <trans-unit id="event.feeFree">
-        <source>Fee Free</source>
-        <target>Eintritt frei</target>
-      </trans-unit>
-      <trans-unit id="event.fee">
-        <source>Fee</source>
-        <target>Eintritt</target>
-      </trans-unit>
-      <trans-unit id="event.eventCurrency">
-        <source>Event Currency</source>
-        <target>Währung</target>
-      </trans-unit>
-      <trans-unit id="event.location">
-        <source>Location</source>
-        <target>Veranstaltungsort</target>
-      </trans-unit>
-      <trans-unit id="event.locationStreet">
-        <source>Location Street</source>
-        <target>Adresse, Strasse</target>
-      </trans-unit>
-      <trans-unit id="event.locationCity">
-        <source>Location City</source>
-        <target>Stadt</target>
-      </trans-unit>
-      <trans-unit id="event.locationCountry">
-        <source>Location Country</source>
-        <target>Land</target>
-      </trans-unit>
-      <trans-unit id="event.locationWheelchairAccessible">
-        <source>Location Wheelchair Accessible</source>
-        <target>Zugang ist rollstuhlgängig</target>
-      </trans-unit>
-      <trans-unit id="event.organizer">
-        <source>Organizer</source>
-        <target>Veranstalter</target>
-      </trans-unit>
-      <trans-unit id="event.organizerWww">
-        <source>Organizer WWW</source>
-        <target>Veranstalter WWW</target>
-      </trans-unit>
-      <trans-unit id="event.organizerEmail">
-        <source>Organizer Email</source>
-        <target>Veranstalter Email</target>
-      </trans-unit>
-      <trans-unit id="event.registrationUntil">
-        <source>Registration Until</source>
-        <target>Anmeldung bis</target>
-      </trans-unit>
-      <trans-unit id="event.notes">
-        <source>Notes</source>
-        <target>Bemerkungen</target>
-      </trans-unit>
-      <trans-unit id="event.subheader">
-        <source>Subheader</source>
-        <target>Untertitel</target>
-      </trans-unit>
-      <trans-unit id="event.frontendUser">
-        <source>Frontend User</source>
-        <target>Frontend Benutzer</target>
-      </trans-unit>
+		<header/>
+		<body>
+		  <trans-unit id="tx_newseventregistration_domain_model_news">
+		    <source>Events</source>
+		    <target>Veranstaltungen</target>
+		  </trans-unit>
+		  <trans-unit id="createNew">
+		    <source>Create New</source>
+		    <target>Abschicken</target>
+		  </trans-unit>
+		  <trans-unit id="event.media">
+		    <source>Media</source>
+		    <target>Eine Bilddatei (max. 8MB)</target>
+		  </trans-unit>
+		  <trans-unit id="event.eventTitle">
+		    <source>Event Title</source>
+		    <target>Titel der Veranstaltung</target>
+		  </trans-unit>
+		  <trans-unit id="event.eventType">
+		    <source>Event Type</source>
+		    <target>Art der Veranstaltung</target>
+		  </trans-unit>
+		  <trans-unit id="event.eventSpeaker">
+		    <source>Event Speakers, Guests</source>
+		    <target>Weitere Angaben (Referenten, Gäste, etc.) max. 256 Zeichen</target>
+		  </trans-unit>
+		  <trans-unit id="event.eventLanguage">
+		    <source>Event Language</source>
+		    <target>Sprache</target>
+		  </trans-unit>
+		  <trans-unit id="event.eventDate">
+		    <source>Event Date</source>
+		    <target>Beginn der Veranstaltung (Datum)</target>
+		  </trans-unit>
+		  <trans-unit id="event.eventTime">
+		    <source>Event Time</source>
+		    <target>Beginn (Uhrzeit)</target>
+		  </trans-unit>
+		  <trans-unit id="event.eventOpeningHours">
+		    <source>Event Opening Hours</source>
+		    <target>Öffnungszeiten</target>
+		  </trans-unit>
+		  <trans-unit id="event.eventEnd">
+		    <source>Event End</source>
+		    <target>Veranstaltungsende (Datum)</target>
+		  </trans-unit>
+		  <trans-unit id="event.feeFree">
+		    <source>Fee Free</source>
+		    <target>Eintritt frei</target>
+		  </trans-unit>
+		  <trans-unit id="event.fee">
+		    <source>Fee</source>
+		    <target>Eintritt</target>
+		  </trans-unit>
+		  <trans-unit id="event.eventCurrency">
+		    <source>Event Currency</source>
+		    <target>Währung</target>
+		  </trans-unit>
+		  <trans-unit id="event.location">
+		    <source>Location</source>
+		    <target>Veranstaltungsort</target>
+		  </trans-unit>
+		  <trans-unit id="event.locationStreet">
+		    <source>Location Street</source>
+		    <target>Adresse, Strasse</target>
+		  </trans-unit>
+		  <trans-unit id="event.locationCity">
+		    <source>Location City</source>
+		    <target>Stadt</target>
+		  </trans-unit>
+		  <trans-unit id="event.locationCountry">
+		    <source>Location Country</source>
+		    <target>Land</target>
+		  </trans-unit>
+		  <trans-unit id="event.locationWheelchairAccessible">
+		    <source>Location Wheelchair Accessible</source>
+		    <target>Zugang ist rollstuhlgängig</target>
+		  </trans-unit>
+		  <trans-unit id="event.organizer">
+		    <source>Organizer</source>
+		    <target>Veranstalter</target>
+		  </trans-unit>
+		  <trans-unit id="event.organizerWww">
+		    <source>Organizer WWW</source>
+		    <target>Veranstalter WWW</target>
+		  </trans-unit>
+		  <trans-unit id="event.organizerEmail">
+		    <source>Organizer Email</source>
+		    <target>Veranstalter Email</target>
+		  </trans-unit>
+		  <trans-unit id="event.registrationUntil">
+		    <source>Registration Until</source>
+		    <target>Anmeldung bis</target>
+		  </trans-unit>
+		  <trans-unit id="event.notes">
+		    <source>Notes</source>
+		    <target>Bemerkungen</target>
+		  </trans-unit>
+		  <trans-unit id="event.subheader">
+		    <source>Subheader</source>
+		    <target>Untertitel</target>
+		  </trans-unit>
+		  <trans-unit id="event.frontendUser">
+		    <source>Frontend User</source>
+		    <target>Frontend Benutzer</target>
+		  </trans-unit>
+		  <trans-unit id="error.1221560718">
+		  	<source>This field is required!</source>
+		    <target>Bitte dieses Feld ausfüllen!</target>
+		  </trans-unit>
     </body>
   </file>
 </xliff>

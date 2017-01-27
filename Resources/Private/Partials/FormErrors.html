@@ -5,7 +5,7 @@
             <ul>
                 <f:for each="{validationResults.flattenedErrors}" key="propertyPath" as="errors">
                     <li>
-                        <f:translate key="{propertyPath}" default="{propertyPath}"/>
+                        <span class="alert-warning property"><f:translate key="{propertyPath}" default="{propertyPath}"/></span>
                         <ul>
                             <f:for each="{errors}" as="error">
                                 <li>
