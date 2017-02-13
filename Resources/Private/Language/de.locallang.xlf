@@ -121,7 +121,7 @@
 		  </trans-unit>
 		  <trans-unit id="error.1486994606">
 			<source>The date must have the syntax d.m.Y!</source>
-		    <target>Das Datum bitte numerisch: Tag.Monat.Jahr</target>
+		    <target>Bitte das Datum numerisch in der Schreibweise: Tag.Monat.Jahr</target>
 		  </trans-unit>
 		  <trans-unit id="error.1486994607">
 			<source>The date must be in the future!</source>
