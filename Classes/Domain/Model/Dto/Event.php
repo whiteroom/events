@@ -55,6 +55,7 @@ class Event extends AbstractEntity
      *
      * @var string
      * @validate NotEmpty
+     * @validate \GeorgRinger\NewsEventRegistration\Domain\Validator\DateValidator
      */
     protected $eventDate = '';
 

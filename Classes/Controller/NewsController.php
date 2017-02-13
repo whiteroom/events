@@ -210,6 +210,12 @@ class NewsController extends ActionController
             return [];
         }
     }
+    
+    protected function addErrorFlashMessage()
+    {
+        // do nothing
+    }
+    
 
     /**
      * @param string $key

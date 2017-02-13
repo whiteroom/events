@@ -119,6 +119,14 @@
 		  	<source>This field is required!</source>
 		    <target>Bitte dieses Feld ausfüllen!</target>
 		  </trans-unit>
+		  <trans-unit id="error.1486994606">
+			<source>The date must have the syntax d.m.Y!</source>
+		    <target>Das Datum bitte numerisch: Tag.Monat.Jahr</target>
+		  </trans-unit>
+		  <trans-unit id="error.1486994607">
+			<source>The date must be in the future!</source>
+		    <target>Das Datum muss in der Zukunft liegen!</target>
+		  </trans-unit>
     </body>
   </file>
 </xliff>
