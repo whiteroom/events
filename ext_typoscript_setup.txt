@@ -1,20 +1,20 @@
 plugin.tx_newseventregistration_registration {
     settings {
         pid = 33
-        pathForMedia = fileadmin/news_import/event/
+        pathForMedia = fileadmin/_event_registration/media/
 
         mailToUser {
             enable = 1
             subject = Your registration
-            fromMailAddress = mail@ringer.it
-            fromMailName = Georg Ringer
+            fromMailAddress = mail@mail.org
+            fromMailName = Daniel Schoeneck
         }
 
         mailToAdmin {
             enable = 1
-            to = office@ringer.it
+            to = office@mail.org
             subject = New Registration
-            fromMailAddress = mail@ringer.it
+            fromMailAddress = mail@mail.org
             fromMailName = Georg Ringer
             cc =
         }
