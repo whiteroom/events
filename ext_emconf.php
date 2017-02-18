@@ -11,7 +11,7 @@
  ***************************************************************/
 
 $EM_CONF[$_EXTKEY] = [
-    'title' => 'News Event Registration',
+    'title' => 'News Frontend Event Registration',
     'description' => '',
     'category' => 'plugin',
     'author' => 'Georg Ringer',
